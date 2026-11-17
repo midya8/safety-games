@@ -1,8 +1,8 @@
-# ShieldLab
+# Safety games
 
 ShieldLab solves small, hand-written protocol games with an adversarial environment. Inspect the fixed-point rounds, controller moves, losing ranks and branching strategy graphs in Python or the browser. The Python package has no runtime dependencies; separate native checkers and independent JavaScript implementations replay the reports.
 
-[Interactive inspector](https://midya8.github.io/shieldlab/) | [Exact method and sources](METHOD.md) | [Native solver](shieldlab/core.py) | [Independent checker](shieldlab/verify.py)
+[Interactive inspector](https://midya8.github.io/safety-games/) | [Exact method and sources](METHOD.md) | [Native solver](shieldlab/core.py) | [Independent checker](shieldlab/verify.py)
 
 ## Choose an objective
 
@@ -52,7 +52,7 @@ Finite, total, deterministic moves and turn-based perfect information. Adversari
 
 ## Reach-avoid: first goal visit
 
-[Reach-avoid inspector](https://midya8.github.io/shieldlab/reachavoid.html) | [Precise contract and eight-source ledger](REACHAVOID.md)
+[Reach-avoid inspector](https://midya8.github.io/safety-games/reachavoid.html) | [Precise contract and eight-source ledger](REACHAVOID.md)
 
 A separate finite first-goal objective distinguishes safe waiting from forced arrival. Inspect every synchronous attractor obligation, exact minimum worst-case move bound, rank-decreasing strategy graph and complete target-avoiding counterstrategy. A move to a winning successor can still stall forever. A slower detour can also be winning: every positional controller assignment is evaluated separately, including a worst-case goal path, unsafe path or non-goal lasso for each root.
 
@@ -71,7 +71,7 @@ The reach-avoid release checked 24 native test functions (8 original plus 16 rea
 
 A target is live, not terminal. The separate safety-and-Buchi inspector checks that every play stays safe **and visits a supplied target infinitely often**. One acknowledgement followed by permanent safe waiting passes first-hit reach-avoid but fails recurrence. Goal outgoing edges and environment ownership can change the answer.
 
-[Safe recurrence inspector](https://midya8.github.io/shieldlab/recurrence.html) | [Exact recurrence contract and inspected sources](RECURRENCE.md)
+[Safe recurrence inspector](https://midya8.github.io/safety-games/recurrence.html) | [Exact recurrence contract and inspected sources](RECURRENCE.md)
 
 Every nested greatest/least fixed-point round, every successor obligation, both players' complete positional-policy atlases, every root outcome and labeled failure lasso are retained. A separate checker enumerates full strategy pairs and simulates their unique plays; an independent JavaScript engine does the same. Complete branching proof graphs retain every opponent move and stop only at unsafe, never at a target.
 
