@@ -1,6 +1,6 @@
 # Safety games
 
-ShieldLab solves small, hand-written protocol games with an adversarial environment. Inspect the fixed-point rounds, controller moves, losing ranks and branching strategy graphs in Python or the browser. The Python package has no runtime dependencies; separate native checkers and independent JavaScript implementations replay the reports.
+This implementation solves small, hand-written protocol games with an adversarial environment. Inspect the fixed-point rounds, controller moves, losing ranks and branching strategy graphs in Python or the browser. The Python package has no runtime dependencies; separate native checkers and independent JavaScript implementations replay the reports.
 
 [Interactive inspector](https://midya8.github.io/safety-games/) | [Exact method and sources](METHOD.md) | [Native solver](shieldlab/core.py) | [Independent checker](shieldlab/verify.py)
 
